@@ -1,0 +1,22 @@
+{
+    "name": "velsym/velsym",
+    "description": "Velsym framework.",
+    "type": "project",
+
+    "require": {
+        "velsym/core": "dev-main",
+        "velsym/dummy-dependency": "dev-main"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+        }
+    },
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Xawier Slupik",
+            "email": "48760619+xBlixon@users.noreply.github.com"
+        }
+    ]
+}

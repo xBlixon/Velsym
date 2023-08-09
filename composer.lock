@@ -1,0 +1,185 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "ded41ae0de320755eeddf9bcf4c219de",
+    "packages": [
+        {
+            "name": "velsym/core",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xBlixon/Velsym-Core.git",
+                "reference": "8e45b88f971188227f7930291a22a13ee1c6c0c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xBlixon/Velsym-Core/zipball/8e45b88f971188227f7930291a22a13ee1c6c0c9",
+                "reference": "8e45b88f971188227f7930291a22a13ee1c6c0c9",
+                "shasum": ""
+            },
+            "require": {
+                "velsym/dependency-injection": "dev-main",
+                "velsym/routing": "dev-main"
+            },
+            "default-branch": true,
+            "type": "metapackage",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Xawier Slupik",
+                    "email": "48760619+xBlixon@users.noreply.github.com"
+                }
+            ],
+            "description": "Velsym Framework Core.",
+            "support": {
+                "issues": "https://github.com/xBlixon/Velsym-Core/issues",
+                "source": "https://github.com/xBlixon/Velsym-Core/tree/main"
+            },
+            "time": "2023-08-09T18:43:15+00:00"
+        },
+        {
+            "name": "velsym/dependency-injection",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xBlixon/DependencyInjection.git",
+                "reference": "164728e5d95d6d99208dc474b1e2e3825a5aa5fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xBlixon/DependencyInjection/zipball/164728e5d95d6d99208dc474b1e2e3825a5aa5fb",
+                "reference": "164728e5d95d6d99208dc474b1e2e3825a5aa5fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Velsym\\TestClasses\\": "testing/",
+                    "Velsym\\DependencyInjection\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Xawier Slupik",
+                    "email": "48760619+xBlixon@users.noreply.github.com"
+                }
+            ],
+            "description": "Dependency management system for PHP.",
+            "support": {
+                "issues": "https://github.com/xBlixon/DependencyInjection/issues",
+                "source": "https://github.com/xBlixon/DependencyInjection/tree/main"
+            },
+            "time": "2023-08-09T18:20:45+00:00"
+        },
+        {
+            "name": "velsym/dummy-dependency",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xBlixon/DummyVelsymDependency.git",
+                "reference": "068544f2d6f390133712e0226f2e2a22d6059d8b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xBlixon/DummyVelsymDependency/zipball/068544f2d6f390133712e0226f2e2a22d6059d8b",
+                "reference": "068544f2d6f390133712e0226f2e2a22d6059d8b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Velsym\\DummyDependency\\": "src/",
+                    "PackageName\\VelsymDependencyMapping\\": "dependencies/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Xawier Slupik",
+                    "email": "48760619+xBlixon@users.noreply.github.com"
+                }
+            ],
+            "description": "Dummy dependency.",
+            "support": {
+                "issues": "https://github.com/xBlixon/DummyVelsymDependency/issues",
+                "source": "https://github.com/xBlixon/DummyVelsymDependency/tree/main"
+            },
+            "time": "2023-08-09T19:49:54+00:00"
+        },
+        {
+            "name": "velsym/routing",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xBlixon/Routing.git",
+                "reference": "c61eed0c584d25ae77effb8c4da8f25108c2305d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xBlixon/Routing/zipball/c61eed0c584d25ae77effb8c4da8f25108c2305d",
+                "reference": "c61eed0c584d25ae77effb8c4da8f25108c2305d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Velsym\\Routing\\": "src/",
+                    "Velsym\\TestRoutes\\": "test-routes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Xawier Slupik",
+                    "email": "48760619+xBlixon@users.noreply.github.com"
+                }
+            ],
+            "description": "PHP routing package.",
+            "support": {
+                "issues": "https://github.com/xBlixon/Routing/issues",
+                "source": "https://github.com/xBlixon/Routing/tree/main"
+            },
+            "time": "2023-08-09T14:56:13+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "velsym/core": 20,
+        "velsym/dummy-dependency": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
