@@ -6,14 +6,19 @@
     "require": {
         "php": "^8.2",
         "velsym/core": "dev-main",
-        "velsym/dummy-dependency": "dev-main"
+        "composer/composer": "^2.6@dev",
+        "velsym/dummy-dependency": "*"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
+            "Velsym\\ComposerScripts\\": "composer-scripts/"
         }
     },
     "minimum-stability": "dev",
+    "scripts": {
+        "post-package-install": "Velsym\\ComposerScripts\\Scripts::postPackageInstall"
+    },
     "authors": [
         {
             "name": "Xawier Slupik",
