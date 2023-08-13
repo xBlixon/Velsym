@@ -10,27 +10,73 @@ class Scripts
 {
     public static function postPackageInstall(PackageEvent $event): void
     {
-        /** @var CompletePackage $package */
-        $package = $event->getOperation()->getPackage();
-
-        $path = realpath(InstalledVersions::getInstallPath($package->getName()));
-        $path = $path . DIRECTORY_SEPARATOR . "velsym-dependencies";
-        $isVelsymCompatible = is_dir($path);
-        if ($isVelsymCompatible) {
+        $path = self::getPackagePath($event) . DIRECTORY_SEPARATOR . "velsym-dependencies";
+        if ($isVelsymCompatible = is_dir($path)) {
             $dependenciesPath = $path . DIRECTORY_SEPARATOR . "dependencies.php";
             self::addDependency($dependenciesPath);
         }
     }
 
-    public static function addDependency(string $dependencyPath): void
+    public static function prePackageUninstall(PackageEvent $event)
     {
-        $slash = DIRECTORY_SEPARATOR;
-        $projectRoot = realpath(__DIR__ . "$slash..");
-        $relativeDependencyPath = str_replace($projectRoot . $slash, "", $dependencyPath);
-        $mainDependenciesPath = realpath("$projectRoot{$slash}src{$slash}dependencies.php");
+        $path = self::getPackagePath($event) . DIRECTORY_SEPARATOR . "velsym-dependencies";
+        if ($isVelsymCompatible = is_dir($path)) {
+            $dependenciesPath = $path . DIRECTORY_SEPARATOR . "dependencies.php";
+            self::removeDependency($dependenciesPath);
+        }
+    }
+
+    private static function addDependency(string $dependencyPath): void
+    {
+        $relativeDependencyPath = self::getRelativePath($dependencyPath);
+        $mainDependenciesPath = self::getMainDependenciesPath();
         $mainDependenciesContent = file($mainDependenciesPath);
         $newLineDependency = ["    require('$relativeDependencyPath'),\n"];
         array_splice($mainDependenciesContent, count($newLineDependency) - 2, 0, $newLineDependency);
         file_put_contents($mainDependenciesPath, $mainDependenciesContent);
+    }
+
+    private static function removeDependency(string $dependencyPath): void
+    {
+        $relativeDependencyPath = self::getRelativePath($dependencyPath);
+        $mainDependenciesPath = self::getMainDependenciesPath();
+        $mainDependenciesContent = file($mainDependenciesPath);
+        $dependencyLineIndex = self::array_search_partial($mainDependenciesContent, $relativeDependencyPath);
+        if ($dependencyLineIndex === -1) return;
+        unset($mainDependenciesContent[$dependencyLineIndex]);
+        file_put_contents($mainDependenciesPath, $mainDependenciesContent);
+        self::removeDependency($dependencyPath); // In case of duplicate require
+    }
+
+    private static function getPackagePath(PackageEvent $event): string
+    {
+        /** @var CompletePackage $package */
+        $package = $event->getOperation()->getPackage();
+        return realpath(InstalledVersions::getInstallPath($package->getName()));
+    }
+
+    private static function getRootPath(): false|string
+    {
+        return realpath(__DIR__ . DIRECTORY_SEPARATOR . "..");
+    }
+
+    private static function getRelativePath(string $finalPath): array|string
+    {
+        $rootPath = self::getRootPath();
+        return str_replace($rootPath . DIRECTORY_SEPARATOR, "", $finalPath);
+    }
+
+    private static function getMainDependenciesPath(): false|string
+    {
+        return realpath(self::getRootPath() . DIRECTORY_SEPARATOR . "src" . DIRECTORY_SEPARATOR . "dependencies.php");
+    }
+
+    private static function array_search_partial($arr, $keyword): int|string
+    {
+        foreach ($arr as $index => $string) {
+            if (strpos($string, $keyword) !== FALSE)
+                return $index;
+        }
+        return -1;
     }
 }

@@ -7,7 +7,7 @@
         "php": "^8.2",
         "velsym/core": "dev-main",
         "composer/composer": "^2.6@dev",
-        "velsym/dummy-dependency": "*"
+        "velsym/dummy-dependency": "dev-main"
     },
     "license": "MIT",
     "autoload": {
@@ -17,7 +17,8 @@
     },
     "minimum-stability": "dev",
     "scripts": {
-        "post-package-install": "Velsym\\ComposerScripts\\Scripts::postPackageInstall"
+        "post-package-install": "Velsym\\ComposerScripts\\Scripts::postPackageInstall",
+        "pre-package-uninstall": "Velsym\\ComposerScripts\\Scripts::prePackageUninstall"
     },
     "authors": [
         {
