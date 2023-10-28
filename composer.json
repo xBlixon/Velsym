@@ -18,6 +18,7 @@
     },
     "minimum-stability": "dev",
     "scripts": {
+        "post-create-project-cmd": "Velsym\\ComposerScripts\\Scripts::postCreateProjectCmd",
         "post-package-install": "Velsym\\ComposerScripts\\Scripts::postPackageInstall",
         "pre-package-uninstall": "Velsym\\ComposerScripts\\Scripts::prePackageUninstall",
         "server.start": "Velsym\\ComposerScripts\\Scripts::serverStart",

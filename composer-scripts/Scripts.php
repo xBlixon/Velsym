@@ -8,6 +8,14 @@ use Composer\Installer\PackageEvent;
 
 class Scripts
 {
+    public static function postCreateProjectCmd(): void
+    {
+        $srcPath = self::getRootPath() . "/src";
+        mkdir("$srcPath/models");
+        mkdir("$srcPath/public");
+        mkdir("$srcPath/routes");
+    }
+
     public static function postPackageInstall(PackageEvent $event): void
     {
         $path = self::getPackagePath($event) . "/velsym-dependencies";
