@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87886ed746f3d49c5735a3cb7c39c322",
+    "content-hash": "08f516357ab2a3f9a826efa4b6d50c2a",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/ca-bundle.git",
-                "reference": "90d087e988ff194065333d16bc5cf649872d9cdb"
+                "reference": "4d0ae9807cf38e759b6f10b09195b3addd7d8685"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/90d087e988ff194065333d16bc5cf649872d9cdb",
-                "reference": "90d087e988ff194065333d16bc5cf649872d9cdb",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/4d0ae9807cf38e759b6f10b09195b3addd7d8685",
+                "reference": "4d0ae9807cf38e759b6f10b09195b3addd7d8685",
                 "shasum": ""
             },
             "require": {
@@ -65,7 +65,7 @@
             "support": {
                 "irc": "irc://irc.freenode.org/composer",
                 "issues": "https://github.com/composer/ca-bundle/issues",
-                "source": "https://github.com/composer/ca-bundle/tree/1.3.6"
+                "source": "https://github.com/composer/ca-bundle/tree/main"
             },
             "funding": [
                 {
@@ -81,7 +81,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-06-06T12:02:59+00:00"
+            "time": "2023-10-11T09:24:02+00:00"
         },
         {
             "name": "composer/class-map-generator",
@@ -163,12 +163,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "95dca79fc2e18c3a4e33f207c1fcaa7d5b559400"
+                "reference": "aefa46dfbabea3497437480061496ba54773bf46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/95dca79fc2e18c3a4e33f207c1fcaa7d5b559400",
-                "reference": "95dca79fc2e18c3a4e33f207c1fcaa7d5b559400",
+                "url": "https://api.github.com/repos/composer/composer/zipball/aefa46dfbabea3497437480061496ba54773bf46",
+                "reference": "aefa46dfbabea3497437480061496ba54773bf46",
                 "shasum": ""
             },
             "require": {
@@ -214,7 +214,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "2.6-dev"
+                    "dev-main": "2.7-dev"
                 },
                 "phpstan": {
                     "includes": [
@@ -270,7 +270,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-04T09:06:00+00:00"
+            "time": "2023-10-27T09:36:59+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -348,12 +348,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/pcre.git",
-                "reference": "4bff79ddd77851fe3cdd11616ed3f92841ba5bd2"
+                "reference": "00104306927c7a0919b4ced2aaa6782c1e61a3c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/pcre/zipball/4bff79ddd77851fe3cdd11616ed3f92841ba5bd2",
-                "reference": "4bff79ddd77851fe3cdd11616ed3f92841ba5bd2",
+                "url": "https://api.github.com/repos/composer/pcre/zipball/00104306927c7a0919b4ced2aaa6782c1e61a3c9",
+                "reference": "00104306927c7a0919b4ced2aaa6782c1e61a3c9",
                 "shasum": ""
             },
             "require": {
@@ -396,7 +396,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/pcre/issues",
-                "source": "https://github.com/composer/pcre/tree/3.1.0"
+                "source": "https://github.com/composer/pcre/tree/3.1.1"
             },
             "funding": [
                 {
@@ -412,7 +412,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-11-17T09:50:14+00:00"
+            "time": "2023-10-11T07:11:09+00:00"
         },
         {
             "name": "composer/semver",
@@ -420,12 +420,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "fa1ec24f0ab1efe642671ec15c51a3ab879f59bf"
+                "reference": "1d09200268e7d1052ded8e5da9c73c96a63d18f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/fa1ec24f0ab1efe642671ec15c51a3ab879f59bf",
-                "reference": "fa1ec24f0ab1efe642671ec15c51a3ab879f59bf",
+                "url": "https://api.github.com/repos/composer/semver/zipball/1d09200268e7d1052ded8e5da9c73c96a63d18f5",
+                "reference": "1d09200268e7d1052ded8e5da9c73c96a63d18f5",
                 "shasum": ""
             },
             "require": {
@@ -494,7 +494,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-13T15:47:53+00:00"
+            "time": "2023-08-31T12:20:31+00:00"
         },
         {
             "name": "composer/spdx-licenses",
@@ -649,12 +649,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "ad87d5a5ca981228e0e205c2bc7dfb8e24559b60"
+                "reference": "fbbe7e5d79f618997bc3332a6f49246036c45793"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
-                "reference": "ad87d5a5ca981228e0e205c2bc7dfb8e24559b60",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/fbbe7e5d79f618997bc3332a6f49246036c45793",
+                "reference": "fbbe7e5d79f618997bc3332a6f49246036c45793",
                 "shasum": ""
             },
             "require": {
@@ -709,9 +709,9 @@
             ],
             "support": {
                 "issues": "https://github.com/justinrainbow/json-schema/issues",
-                "source": "https://github.com/justinrainbow/json-schema/tree/5.2.12"
+                "source": "https://github.com/justinrainbow/json-schema/tree/v5.2.13"
             },
-            "time": "2022-04-13T08:02:27+00:00"
+            "time": "2023-09-26T02:20:38+00:00"
         },
         {
             "name": "psr/container",
@@ -719,12 +719,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "90db7b9ac2a2c5b849fcb69dde58f3ae182c68f5"
+                "reference": "707984727bd5b2b670e59559d3ed2500240cf875"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/90db7b9ac2a2c5b849fcb69dde58f3ae182c68f5",
-                "reference": "90db7b9ac2a2c5b849fcb69dde58f3ae182c68f5",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/707984727bd5b2b670e59559d3ed2500240cf875",
+                "reference": "707984727bd5b2b670e59559d3ed2500240cf875",
                 "shasum": ""
             },
             "require": {
@@ -763,9 +763,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/master"
+                "source": "https://github.com/php-fig/container"
             },
-            "time": "2022-07-19T17:36:59+00:00"
+            "time": "2023-09-22T11:11:30+00:00"
         },
         {
             "name": "psr/log",
@@ -824,19 +824,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/reactphp/promise.git",
-                "reference": "c86753c76fd3be465d93b308f18d189f01a22be4"
+                "reference": "7053e3ca49a9a8225f081c8f67f785f80cb4d82e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/reactphp/promise/zipball/c86753c76fd3be465d93b308f18d189f01a22be4",
-                "reference": "c86753c76fd3be465d93b308f18d189f01a22be4",
+                "url": "https://api.github.com/repos/reactphp/promise/zipball/7053e3ca49a9a8225f081c8f67f785f80cb4d82e",
+                "reference": "7053e3ca49a9a8225f081c8f67f785f80cb4d82e",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1.0"
             },
             "require-dev": {
-                "phpstan/phpstan": "1.10.20 || 1.4.10",
+                "phpstan/phpstan": "1.10.34 || 1.4.10",
                 "phpunit/phpunit": "^9.5 || ^7.5"
             },
             "default-branch": true,
@@ -882,7 +882,7 @@
             ],
             "support": {
                 "issues": "https://github.com/reactphp/promise/issues",
-                "source": "https://github.com/reactphp/promise/tree/v3.0.0"
+                "source": "https://github.com/reactphp/promise/tree/3.x"
             },
             "funding": [
                 {
@@ -890,7 +890,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-07-11T16:12:49+00:00"
+            "time": "2023-09-18T20:25:14+00:00"
         },
         {
             "name": "seld/jsonlint",
@@ -1010,12 +1010,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/signal-handler.git",
-                "reference": "f69d119511dc0360440cdbdaa71829c149b7be75"
+                "reference": "04a6112e883ad76c0ada8e4a9f7520bbfdb6bb98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/signal-handler/zipball/f69d119511dc0360440cdbdaa71829c149b7be75",
-                "reference": "f69d119511dc0360440cdbdaa71829c149b7be75",
+                "url": "https://api.github.com/repos/Seldaek/signal-handler/zipball/04a6112e883ad76c0ada8e4a9f7520bbfdb6bb98",
+                "reference": "04a6112e883ad76c0ada8e4a9f7520bbfdb6bb98",
                 "shasum": ""
             },
             "require": {
@@ -1062,9 +1062,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Seldaek/signal-handler/issues",
-                "source": "https://github.com/Seldaek/signal-handler/tree/2.0.1"
+                "source": "https://github.com/Seldaek/signal-handler/tree/2.0.2"
             },
-            "time": "2022-07-20T18:31:45+00:00"
+            "time": "2023-09-03T09:24:00+00:00"
         },
         {
             "name": "symfony/console",
@@ -1072,12 +1072,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "b52b2c1a54c92153cadc1a684d0eafd74f48eb53"
+                "reference": "d7a88e0247eb39161d175745569ab346c6117dab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/b52b2c1a54c92153cadc1a684d0eafd74f48eb53",
-                "reference": "b52b2c1a54c92153cadc1a684d0eafd74f48eb53",
+                "url": "https://api.github.com/repos/symfony/console/zipball/d7a88e0247eb39161d175745569ab346c6117dab",
+                "reference": "d7a88e0247eb39161d175745569ab346c6117dab",
                 "shasum": ""
             },
             "require": {
@@ -1101,8 +1101,12 @@
                 "symfony/config": "^6.4|^7.0",
                 "symfony/dependency-injection": "^6.4|^7.0",
                 "symfony/event-dispatcher": "^6.4|^7.0",
+                "symfony/http-foundation": "^6.4|^7.0",
+                "symfony/http-kernel": "^6.4|^7.0",
                 "symfony/lock": "^6.4|^7.0",
+                "symfony/messenger": "^6.4|^7.0",
                 "symfony/process": "^6.4|^7.0",
+                "symfony/stopwatch": "^6.4|^7.0",
                 "symfony/var-dumper": "^6.4|^7.0"
             },
             "type": "library",
@@ -1153,7 +1157,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-31T07:18:33+00:00"
+            "time": "2023-10-17T13:48:31+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -1224,12 +1228,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "16ee262e69c6c2cdd29beab0c9758f7fa081acd3"
+                "reference": "eb22b4ca7f23326df8c552cf87e9c464741ebffc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/16ee262e69c6c2cdd29beab0c9758f7fa081acd3",
-                "reference": "16ee262e69c6c2cdd29beab0c9758f7fa081acd3",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/eb22b4ca7f23326df8c552cf87e9c464741ebffc",
+                "reference": "eb22b4ca7f23326df8c552cf87e9c464741ebffc",
                 "shasum": ""
             },
             "require": {
@@ -1280,7 +1284,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-31T08:32:01+00:00"
+            "time": "2023-10-12T15:41:36+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -1347,7 +1351,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/1.x"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -1429,7 +1433,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/1.x"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -1514,7 +1518,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/1.x"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -1598,7 +1602,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/1.x"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -1678,7 +1682,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php73/tree/1.x"
+                "source": "https://github.com/symfony/polyfill-php73/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -1762,7 +1766,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/1.x"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -1842,7 +1846,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php81/tree/1.x"
+                "source": "https://github.com/symfony/polyfill-php81/tree/v1.28.0"
             },
             "funding": [
                 {
@@ -1866,12 +1870,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "1301c346f49bc07a833f5cf5716e1e62d5857a71"
+                "reference": "acdafc70bf3d177fd370df3b56c14e8c0c371007"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/1301c346f49bc07a833f5cf5716e1e62d5857a71",
-                "reference": "1301c346f49bc07a833f5cf5716e1e62d5857a71",
+                "url": "https://api.github.com/repos/symfony/process/zipball/acdafc70bf3d177fd370df3b56c14e8c0c371007",
+                "reference": "acdafc70bf3d177fd370df3b56c14e8c0c371007",
                 "shasum": ""
             },
             "require": {
@@ -1919,7 +1923,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-07T10:41:48+00:00"
+            "time": "2023-10-17T13:48:31+00:00"
         },
         {
             "name": "symfony/service-contracts",
@@ -2010,12 +2014,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "95ff83d5a8a9f4b831cdd139e2ec10b931aa734f"
+                "reference": "9d433d99aa9b5a72fffe2bfc6564f00456434033"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/95ff83d5a8a9f4b831cdd139e2ec10b931aa734f",
-                "reference": "95ff83d5a8a9f4b831cdd139e2ec10b931aa734f",
+                "url": "https://api.github.com/repos/symfony/string/zipball/9d433d99aa9b5a72fffe2bfc6564f00456434033",
+                "reference": "9d433d99aa9b5a72fffe2bfc6564f00456434033",
                 "shasum": ""
             },
             "require": {
@@ -2088,7 +2092,50 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-07-27T16:29:09+00:00"
+            "time": "2023-09-18T10:43:19+00:00"
+        },
+        {
+            "name": "velsym/auth",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xBlixon/Auth.git",
+                "reference": "968876528ea02efcc7fc65359b33c1105f13e837"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xBlixon/Auth/zipball/968876528ea02efcc7fc65359b33c1105f13e837",
+                "reference": "968876528ea02efcc7fc65359b33c1105f13e837",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2",
+                "velsym/database": "dev-main",
+                "velsym/universal-pack": "dev-main"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Velsym\\Auth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Xawier Slupik",
+                    "email": "48760619+xBlixon@users.noreply.github.com"
+                }
+            ],
+            "description": "Ready to use package for authentication in Velsym framework.",
+            "support": {
+                "issues": "https://github.com/xBlixon/Auth/issues",
+                "source": "https://github.com/xBlixon/Auth/tree/main"
+            },
+            "time": "2023-10-23T15:46:29+00:00"
         },
         {
             "name": "velsym/core",
@@ -2128,17 +2175,59 @@
             "time": "2023-08-09T18:43:15+00:00"
         },
         {
+            "name": "velsym/database",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xBlixon/Database.git",
+                "reference": "dedde61a5481de4299d8938ebd37894e86367757"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xBlixon/Database/zipball/dedde61a5481de4299d8938ebd37894e86367757",
+                "reference": "dedde61a5481de4299d8938ebd37894e86367757",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": "^8.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Velsym\\Database\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Xawier Slupik",
+                    "email": "48760619+xBlixon@users.noreply.github.com"
+                }
+            ],
+            "description": "Database management for PHP.",
+            "support": {
+                "issues": "https://github.com/xBlixon/Database/issues",
+                "source": "https://github.com/xBlixon/Database/tree/main"
+            },
+            "time": "2023-10-28T16:31:18+00:00"
+        },
+        {
             "name": "velsym/dependency-injection",
             "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xBlixon/DependencyInjection.git",
-                "reference": "164728e5d95d6d99208dc474b1e2e3825a5aa5fb"
+                "reference": "0e901fb9b832c6ca3a43849c9e20442390b24306"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xBlixon/DependencyInjection/zipball/164728e5d95d6d99208dc474b1e2e3825a5aa5fb",
-                "reference": "164728e5d95d6d99208dc474b1e2e3825a5aa5fb",
+                "url": "https://api.github.com/repos/xBlixon/DependencyInjection/zipball/0e901fb9b832c6ca3a43849c9e20442390b24306",
+                "reference": "0e901fb9b832c6ca3a43849c9e20442390b24306",
                 "shasum": ""
             },
             "require": {
@@ -2167,48 +2256,7 @@
                 "issues": "https://github.com/xBlixon/DependencyInjection/issues",
                 "source": "https://github.com/xBlixon/DependencyInjection/tree/main"
             },
-            "time": "2023-08-09T18:20:45+00:00"
-        },
-        {
-            "name": "velsym/dummy-dependency",
-            "version": "dev-main",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/xBlixon/DummyVelsymDependency.git",
-                "reference": "4fda15c27e9ea542ff5f3727d21b207652c35173"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/xBlixon/DummyVelsymDependency/zipball/4fda15c27e9ea542ff5f3727d21b207652c35173",
-                "reference": "4fda15c27e9ea542ff5f3727d21b207652c35173",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.2"
-            },
-            "default-branch": true,
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Velsym\\DummyDependency\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Xawier Slupik",
-                    "email": "48760619+xBlixon@users.noreply.github.com"
-                }
-            ],
-            "description": "Dummy dependency.",
-            "support": {
-                "issues": "https://github.com/xBlixon/DummyVelsymDependency/issues",
-                "source": "https://github.com/xBlixon/DummyVelsymDependency/tree/main"
-            },
-            "time": "2023-08-09T22:39:20+00:00"
+            "time": "2023-08-13T17:46:22+00:00"
         },
         {
             "name": "velsym/routing",
@@ -2216,16 +2264,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xBlixon/Routing.git",
-                "reference": "c61eed0c584d25ae77effb8c4da8f25108c2305d"
+                "reference": "c818b31b3b0917230ef6daff80e5f87ee444f885"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xBlixon/Routing/zipball/c61eed0c584d25ae77effb8c4da8f25108c2305d",
-                "reference": "c61eed0c584d25ae77effb8c4da8f25108c2305d",
+                "url": "https://api.github.com/repos/xBlixon/Routing/zipball/c818b31b3b0917230ef6daff80e5f87ee444f885",
+                "reference": "c818b31b3b0917230ef6daff80e5f87ee444f885",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.2"
+                "php": "^8.2",
+                "velsym/dependency-injection": "dev-main",
+                "velsym/universal-pack": "dev-main"
             },
             "default-branch": true,
             "type": "library",
@@ -2250,7 +2300,48 @@
                 "issues": "https://github.com/xBlixon/Routing/issues",
                 "source": "https://github.com/xBlixon/Routing/tree/main"
             },
-            "time": "2023-08-09T14:56:13+00:00"
+            "time": "2023-10-28T15:43:15+00:00"
+        },
+        {
+            "name": "velsym/universal-pack",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/xBlixon/UniversalPack.git",
+                "reference": "e9271faaf3c560793417111e02f2fd0670260bcd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/xBlixon/UniversalPack/zipball/e9271faaf3c560793417111e02f2fd0670260bcd",
+                "reference": "e9271faaf3c560793417111e02f2fd0670260bcd",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Velsym\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Xawier Slupik",
+                    "email": "48760619+xBlixon@users.noreply.github.com"
+                }
+            ],
+            "description": "Connector for velsym packages.",
+            "support": {
+                "issues": "https://github.com/xBlixon/UniversalPack/issues",
+                "source": "https://github.com/xBlixon/UniversalPack/tree/main"
+            },
+            "time": "2023-09-25T16:56:58+00:00"
         }
     ],
     "packages-dev": [],
@@ -2258,7 +2349,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "velsym/core": 20,
-        "composer/composer": 20
+        "composer/composer": 20,
+        "velsym/auth": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

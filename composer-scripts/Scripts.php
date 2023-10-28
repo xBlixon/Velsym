@@ -10,18 +10,18 @@ class Scripts
 {
     public static function postPackageInstall(PackageEvent $event): void
     {
-        $path = self::getPackagePath($event) . DIRECTORY_SEPARATOR . "velsym-dependencies";
+        $path = self::getPackagePath($event) . "/velsym-dependencies";
         if ($isVelsymCompatible = is_dir($path)) {
-            $dependenciesPath = $path . DIRECTORY_SEPARATOR . "dependencies.php";
+            $dependenciesPath = $path . "/dependencies.php";
             self::addDependency($dependenciesPath);
         }
     }
 
     public static function prePackageUninstall(PackageEvent $event)
     {
-        $path = self::getPackagePath($event) . DIRECTORY_SEPARATOR . "velsym-dependencies";
+        $path = self::getPackagePath($event) . "/velsym-dependencies";
         if ($isVelsymCompatible = is_dir($path)) {
-            $dependenciesPath = $path . DIRECTORY_SEPARATOR . "dependencies.php";
+            $dependenciesPath = $path . "/dependencies.php";
             self::removeDependency($dependenciesPath);
         }
     }
@@ -31,7 +31,7 @@ class Scripts
         $relativeDependencyPath = self::getRelativePath($dependencyPath);
         $mainDependenciesPath = self::getMainDependenciesPath();
         $mainDependenciesContent = file($mainDependenciesPath);
-        $newLineDependency = ["    require('$relativeDependencyPath'),\n"];
+        $newLineDependency = ["    require('../'.'$relativeDependencyPath'),\n"];
         array_splice($mainDependenciesContent, count($newLineDependency) - 2, 0, $newLineDependency);
         file_put_contents($mainDependenciesPath, $mainDependenciesContent);
     }
@@ -52,23 +52,25 @@ class Scripts
     {
         /** @var CompletePackage $package */
         $package = $event->getOperation()->getPackage();
+
         return realpath(InstalledVersions::getInstallPath($package->getName()));
     }
 
     private static function getRootPath(): false|string
     {
-        return realpath(__DIR__ . DIRECTORY_SEPARATOR . "..");
+        return realpath(__DIR__ . "/..");
     }
 
     private static function getRelativePath(string $finalPath): array|string
     {
         $rootPath = self::getRootPath();
-        return str_replace($rootPath . DIRECTORY_SEPARATOR, "", $finalPath);
+        $relative = str_replace($rootPath . DIRECTORY_SEPARATOR, "", $finalPath);
+        return str_replace("\\", "/", $relative);
     }
 
     private static function getMainDependenciesPath(): false|string
     {
-        return realpath(self::getRootPath() . DIRECTORY_SEPARATOR . "src" . DIRECTORY_SEPARATOR . "dependencies.php");
+        return realpath(self::getRootPath() . "/src/config/dependencies.php");
     }
 
     private static function array_search_partial($arr, $keyword): int|string
@@ -78,5 +80,16 @@ class Scripts
                 return $index;
         }
         return -1;
+    }
+
+    public static function dbLoadModels(): void
+    {
+        require self::getRootPath() . "/src/config/database-models.php";
+    }
+
+    public static function serverStart(): void
+    {
+        $rootDir = self::getRootPath();
+        system("cd $rootDir/src && php -S 127.0.0.1:1234 index.php");
     }
 }

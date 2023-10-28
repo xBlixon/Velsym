@@ -6,19 +6,22 @@
     "require": {
         "php": "^8.2",
         "velsym/core": "dev-main",
-        "composer/composer": "^2.6@dev",
-        "velsym/dummy-dependency": "dev-main"
+        "velsym/auth": "dev-main",
+        "composer/composer": "^2.6@dev"
     },
     "license": "MIT",
     "autoload": {
         "psr-4": {
+            "App\\": "src/",
             "Velsym\\ComposerScripts\\": "composer-scripts/"
         }
     },
     "minimum-stability": "dev",
     "scripts": {
         "post-package-install": "Velsym\\ComposerScripts\\Scripts::postPackageInstall",
-        "pre-package-uninstall": "Velsym\\ComposerScripts\\Scripts::prePackageUninstall"
+        "pre-package-uninstall": "Velsym\\ComposerScripts\\Scripts::prePackageUninstall",
+        "server.start": "Velsym\\ComposerScripts\\Scripts::serverStart",
+        "db.load.models": "Velsym\\ComposerScripts\\Scripts::dbLoadModels"
     },
     "authors": [
         {
